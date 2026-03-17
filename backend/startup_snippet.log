@@ -1,0 +1,220 @@
+
+  startup_verbose.log:5
+4:2026-02-25T22:22:03.8
+96+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] j.LocalContainerE
+ntityManagerFactoryBean
+ : Initialized JPA 
+EntityManagerFactory 
+for persistence unit 
+'default'
+  startup_verbose.log:5
+5:2026-02-25T22:22:05.0
+26+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] o.s.d.j.r.query.Q
+ueryEnhancerFactory    
+ : Hibernate is in 
+classpath; If 
+applicable, HQL parser 
+will be used.
+  startup_verbose.log:5
+6:2026-02-25T22:22:06.1
+38+05:30  WARN 28456 
+--- [book-management-sy
+stem] [           
+main] JpaBaseConfigurat
+ion$JpaWebConfiguration
+ : spring.jpa.open-in-v
+iew is enabled by 
+default. Therefore, 
+database queries may 
+be performed during 
+view rendering. 
+Explicitly configure sp
+ring.jpa.open-in-view 
+to disable this warning
+> startup_verbose.log:5
+7:2026-02-25T22:22:06.8
+50+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] o.s.s.web.Default
+SecurityFilterChain    
+ : Will secure any 
+request with [org.sprin
+gframework.security.web
+.session.DisableEncodeU
+rlFilter@6f1b0ead, org.
+springframework.securit
+y.web.context.request.a
+sync.WebAsyncManagerInt
+egrationFilter@4487dce,
+ org.springframework.se
+curity.web.context.Secu
+rityContextHolderFilter
+@2a0a178f, org.springfr
+amework.security.web.he
+ader.HeaderWriterFilter
+@11f6a083, org.springfr
+amework.web.filter.Cors
+Filter@3aafa1c1, org.sp
+ringframework.security.
+web.authentication.logo
+ut.LogoutFilter@23cf78f
+9, com.booksystem.secur
+ity.AuthTokenFilter@268
+e30d4, org.springframew
+ork.security.web.savedr
+equest.RequestCacheAwar
+eFilter@12db2921, org.s
+pringframework.security
+.web.servletapi.Securit
+yContextHolderAwareRequ
+estFilter@f6e9c18, org.
+springframework.securit
+y.web.authentication.An
+onymousAuthenticationFi
+lter@192f807, org.sprin
+gframework.security.web
+.session.SessionManagem
+entFilter@5a14a8c1, org
+.springframework.securi
+ty.web.access.Exception
+TranslationFilter@2c64e
+2d0, org.springframewor
+k.security.web.access.i
+ntercept.AuthorizationF
+ilter@32b19d03]
+> startup_verbose.log:5
+8:2026-02-25T22:22:07.5
+08+05:30  WARN 28456 
+--- [book-management-sy
+stem] [           
+main] ConfigServletWebS
+erverApplicationContext
+ : Exception 
+encountered during 
+context initialization 
+- cancelling refresh 
+attempt: org.springfram
+ework.context.Applicati
+onContextException: 
+Failed to start bean 
+'webServerStartStop'
+  startup_verbose.log:5
+9:2026-02-25T22:22:07.5
+16+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] j.LocalContainerE
+ntityManagerFactoryBean
+ : Closing JPA 
+EntityManagerFactory 
+for persistence unit 
+'default'
+  startup_verbose.log:6
+0:2026-02-25T22:22:07.5
+19+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] com.zaxxer.hikari
+.HikariDataSource      
+ : HikariPool-1 - 
+Shutdown initiated...
+  startup_verbose.log:6
+1:2026-02-25T22:22:07.5
+32+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] com.zaxxer.hikari
+.HikariDataSource      
+ : HikariPool-1 - 
+Shutdown completed.
+  startup_verbose.log:6
+2:2026-02-25T22:22:07.5
+50+05:30  INFO 28456 
+--- [book-management-sy
+stem] [           
+main] .s.b.a.l.Conditio
+nEvaluationReportLogger
+ : 
+  
+startup_verbose.log:63:
+> startup_verbose.log:6
+4:Error starting 
+ApplicationContext. To 
+display the condition 
+evaluation report 
+re-run your 
+application with 
+'debug' enabled.
+> startup_verbose.log:6
+5:2026-02-25T22:22:07.5
+88+05:30 ERROR 28456 
+--- [book-management-sy
+stem] [           
+main] o.s.b.d.LoggingFa
+ilureAnalysisReporter  
+ : 
+  
+startup_verbose.log:66:
+  startup_verbose.log:6
+7:*********************
+******
+  startup_verbose.log:6
+8:APPLICATION FAILED 
+TO START
+  startup_verbose.log:8
+2:[INFO] Total time:  
+17.446 s
+  startup_verbose.log:8
+3:[INFO] Finished at: 2
+026-02-25T22:22:07+05:3
+0
+  startup_verbose.log:8
+4:[INFO] --------------
+-----------------------
+-----------------------
+------------
+> startup_verbose.log:8
+5:[ERROR] Failed to 
+execute goal org.spring
+framework.boot:spring-b
+oot-maven-plugin:3.2.2:
+run (default-cli) on 
+project book-management
+-system: Process 
+terminated with exit 
+code: 1 -> [Help 1]
+> startup_verbose.log:8
+6:[ERROR] 
+> startup_verbose.log:8
+7:[ERROR] To see the 
+full stack trace of 
+the errors, re-run 
+Maven with the -e 
+switch.
+> startup_verbose.log:8
+8:[ERROR] Re-run Maven 
+using the -X switch to 
+enable full debug 
+logging.
+> startup_verbose.log:8
+9:[ERROR] 
+> startup_verbose.log:9
+0:[ERROR] For more 
+information about the 
+errors and possible 
+solutions, please read 
+the following articles:
+> startup_verbose.log:9
+1:[ERROR] [Help 1] http
+://cwiki.apache.org/con
+fluence/display/MAVEN/M
+ojoExecutionException
+
+

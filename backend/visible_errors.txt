@@ -1,0 +1,146 @@
+﻿
+  build_output.txt:23: 
+ Use -Xlint:-options 
+to suppress this 
+message.
+  build_output.txt:24: 
+ Use -proc:none to 
+disable annotation 
+processing.
+  build_output.txt:25:[
+INFO] -----------------
+-----------------------
+---------------------
+> build_output.txt:26:[
+ERROR] COMPILATION 
+ERROR : 
+  build_output.txt:27:[
+INFO] -----------------
+-----------------------
+---------------------
+> build_output.txt:28:[
+ERROR] /C:/Users/mmano/
+Desktop/Book_Project/ba
+ckend/src/main/java/com
+/booksystem/controller/
+AuthController.java:[51
+,28] cannot find symbol
+  build_output.txt:29: 
+ symbol:   method 
+getId()
+  build_output.txt:30: 
+ location: variable 
+userDetails of type com
+.booksystem.security.Us
+erDetailsImpl
+> build_output.txt:31:[
+ERROR] /C:/Users/mmano/
+Desktop/Book_Project/ba
+ckend/src/main/java/com
+/booksystem/controller/
+AuthController.java:[53
+,28] cannot find symbol
+  build_output.txt:32: 
+ symbol:   method 
+getEmail()
+  build_output.txt:33: 
+ location: variable 
+userDetails of type com
+.booksystem.security.Us
+erDetailsImpl
+> build_output.txt:34:[
+INFO] 2 errors 
+  build_output.txt:35:[
+INFO] -----------------
+-----------------------
+---------------------
+  build_output.txt:36:[
+INFO] -----------------
+-----------------------
+-----------------------
+---------
+  build_output.txt:37:[
+INFO] BUILD FAILURE
+  build_output.txt:39:[
+INFO] Total time:  
+4.682 s
+  build_output.txt:40:[
+INFO] Finished at: 2026
+-02-25T21:38:52+05:30
+  build_output.txt:41:[
+INFO] -----------------
+-----------------------
+-----------------------
+---------
+> build_output.txt:42:[
+ERROR] Failed to 
+execute goal org.apache
+.maven.plugins:maven-co
+mpiler-plugin:3.11.0:co
+mpile 
+(default-compile) on 
+project book-management
+-system: Compilation 
+failure: Compilation 
+failure: 
+> build_output.txt:43:[
+ERROR] /C:/Users/mmano/
+Desktop/Book_Project/ba
+ckend/src/main/java/com
+/booksystem/controller/
+AuthController.java:[51
+,28] cannot find symbol
+> build_output.txt:44:[
+ERROR]   symbol:   
+method getId()
+> build_output.txt:45:[
+ERROR]   location: 
+variable userDetails 
+of type com.booksystem.
+security.UserDetailsImp
+l
+> build_output.txt:46:[
+ERROR] /C:/Users/mmano/
+Desktop/Book_Project/ba
+ckend/src/main/java/com
+/booksystem/controller/
+AuthController.java:[53
+,28] cannot find symbol
+> build_output.txt:47:[
+ERROR]   symbol:   
+method getEmail()
+> build_output.txt:48:[
+ERROR]   location: 
+variable userDetails 
+of type com.booksystem.
+security.UserDetailsImp
+l
+> build_output.txt:49:[
+ERROR] -> [Help 1]
+> build_output.txt:50:[
+ERROR] 
+> build_output.txt:51:[
+ERROR] To see the full 
+stack trace of the 
+errors, re-run Maven 
+with the -e switch.
+> build_output.txt:52:[
+ERROR] Re-run Maven 
+using the -X switch to 
+enable full debug 
+logging.
+> build_output.txt:53:[
+ERROR] 
+> build_output.txt:54:[
+ERROR] For more 
+information about the 
+errors and possible 
+solutions, please read 
+the following articles:
+> build_output.txt:55:[
+ERROR] [Help 1] http://
+cwiki.apache.org/conflu
+ence/display/MAVEN/Mojo
+FailureException
+
+

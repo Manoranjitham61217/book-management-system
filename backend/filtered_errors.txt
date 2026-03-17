@@ -1,0 +1,131 @@
+
+  startup_error.log:56:
+2026-02-25T22:18:49.805
++05:30  INFO 24208 --- 
+[book-management-system
+] [           main] o.s
+.d.j.r.query.QueryEnhan
+cerFactory     : 
+Hibernate is in 
+classpath; If 
+applicable, HQL parser 
+will be used.
+  startup_error.log:57:
+2026-02-25T22:18:50.988
++05:30  WARN 24208 --- 
+[book-management-system
+] [           main] Jpa
+BaseConfiguration$JpaWe
+bConfiguration : spring
+.jpa.open-in-view is 
+enabled by default. 
+Therefore, database 
+queries may be 
+performed during view 
+rendering. Explicitly 
+configure spring.jpa.op
+en-in-view to disable 
+this warning
+> startup_error.log:58:
+2026-02-25T22:18:51.696
++05:30  INFO 24208 --- 
+[book-management-system
+] [           main] o.s
+.s.web.DefaultSecurityF
+ilterChain     : Will 
+secure any request 
+with [org.springframewo
+rk.security.web.session
+.DisableEncodeUrlFilter
+@6e0fd2dc, org.springfr
+amework.security.web.co
+ntext.request.async.Web
+AsyncManagerIntegration
+Filter@3110bb19, org.sp
+ringframework.security.
+web.context.SecurityCon
+textHolderFilter@530e50
+0c, org.springframework
+.security.web.header.He
+aderWriterFilter@430670
+9f, org.springframework
+.web.filter.CorsFilter@
+1be6c991, org.springfra
+mework.security.web.aut
+hentication.logout.Logo
+utFilter@4b6abf4e, com.
+booksystem.security.Aut
+hTokenFilter@59d29065, 
+org.springframework.sec
+urity.web.savedrequest.
+RequestCacheAwareFilter
+@1925b113, org.springfr
+amework.security.web.se
+rvletapi.SecurityContex
+tHolderAwareRequestFilt
+er@eaa901a, org.springf
+ramework.security.web.a
+uthentication.Anonymous
+AuthenticationFilter@18
+482805, org.springframe
+work.security.web.sessi
+on.SessionManagementFil
+ter@40d1e561, org.sprin
+gframework.security.web
+.access.ExceptionTransl
+ationFilter@32b5b8f8, o
+rg.springframework.secu
+rity.web.access.interce
+pt.AuthorizationFilter@
+4f1cb802]
+> startup_error.log:59:
+2026-02-25T22:18:52.271
++05:30  WARN 24208 --- 
+[book-management-system
+] [           main] Con
+figServletWebServerAppl
+icationContext : 
+Exception encountered 
+during context 
+initialization - 
+cancelling refresh 
+attempt: org.springfram
+ework.context.Applicati
+onContextException: 
+Failed to start bean 
+'webServerStartStop'
+  startup_error.log:60:
+2026-02-25T22:18:52.282
++05:30  INFO 24208 --- 
+[book-management-system
+] [           main] j.L
+ocalContainerEntityMana
+gerFactoryBean : 
+Closing JPA 
+EntityManagerFactory 
+for persistence unit 
+'default'
+  startup_error.log:61:
+2026-02-25T22:18:52.286
++05:30  INFO 24208 --- 
+[book-management-system
+] [           main] com
+.zaxxer.hikari.HikariDa
+taSource       : 
+HikariPool-1 - 
+Shutdown initiated...
+  startup_error.log:90:
+[ERROR] 
+  startup_error.log:91:
+[ERROR] For more 
+information about the 
+errors and possible 
+solutions, please read 
+the following articles:
+> startup_error.log:92:
+[ERROR] [Help 1] http:/
+/cwiki.apache.org/confl
+uence/display/MAVEN/Moj
+oExecutionException
+
+

@@ -1,0 +1,148 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.booksystem:book-management-system >----------------
+[INFO] Building book-management-system 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.2:run (default-cli) > test-compile @ book-management-system >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ book-management-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ book-management-system ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ book-management-system ---
+[INFO] skip non existing resourceDirectory C:\Users\mmano\Desktop\Book_Project\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ book-management-system ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.2:run (default-cli) < test-compile @ book-management-system <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.2:run (default-cli) @ book-management-system ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-25T22:09:57.768+05:30  INFO 2308 --- [book-management-system] [           main] c.booksystem.BookManagementApplication   : Starting BookManagementApplication using Java 21.0.5 with PID 2308 (C:\Users\mmano\Desktop\Book_Project\backend\target\classes started by mmano in C:\Users\mmano\Desktop\Book_Project\backend)
+2026-02-25T22:09:57.773+05:30  INFO 2308 --- [book-management-system] [           main] c.booksystem.BookManagementApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T22:10:00.124+05:30  INFO 2308 --- [book-management-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T22:10:00.299+05:30  INFO 2308 --- [book-management-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 2 JPA repository interfaces.
+2026-02-25T22:10:01.899+05:30  INFO 2308 --- [book-management-system] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-25T22:10:01.938+05:30  INFO 2308 --- [book-management-system] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-25T22:10:01.938+05:30  INFO 2308 --- [book-management-system] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-25T22:10:02.104+05:30  INFO 2308 --- [book-management-system] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-25T22:10:02.113+05:30  INFO 2308 --- [book-management-system] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4196 ms
+2026-02-25T22:10:02.577+05:30  INFO 2308 --- [book-management-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T22:10:02.793+05:30  INFO 2308 --- [book-management-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-25T22:10:02.888+05:30  INFO 2308 --- [book-management-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T22:10:03.571+05:30  INFO 2308 --- [book-management-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T22:10:03.636+05:30  INFO 2308 --- [book-management-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T22:10:04.161+05:30  INFO 2308 --- [book-management-system] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ca17943
+2026-02-25T22:10:04.164+05:30  INFO 2308 --- [book-management-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T22:10:04.257+05:30  WARN 2308 --- [book-management-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T22:10:06.868+05:30  INFO 2308 --- [book-management-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table books (id bigserial not null, author varchar(255) not null, category varchar(255), count integer, created_at timestamp(6), description TEXT, isbn varchar(255), published_year integer, title varchar(255) not null, primary key (id))
+Hibernate: create table users (id bigserial not null, email varchar(255) not null, password varchar(255) not null, role varchar(255) check (role in ('ROLE_USER','ROLE_ADMIN')), username varchar(255) not null, primary key (id))
+Hibernate: alter table if exists books drop constraint if exists UK_kibbepcitr0a3cpk3rfr7nihn
+2026-02-25T22:10:07.251+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-02-25T22:10:07.251+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_kibbepcitr0a3cpk3rfr7nihn" of relation "books" does not exist, skipping
+Hibernate: alter table if exists books add constraint UK_kibbepcitr0a3cpk3rfr7nihn unique (isbn)
+Hibernate: alter table if exists users drop constraint if exists UK_6dotkott2kjsp8vw4d0m25fb7
+2026-02-25T22:10:07.268+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-02-25T22:10:07.268+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+Hibernate: alter table if exists users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: alter table if exists users drop constraint if exists UK_r43af9ap4edm43mmtq01oddj6
+2026-02-25T22:10:07.275+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2026-02-25T22:10:07.277+05:30  WARN 2308 --- [book-management-system] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_r43af9ap4edm43mmtq01oddj6" of relation "users" does not exist, skipping
+Hibernate: alter table if exists users add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)
+2026-02-25T22:10:07.286+05:30  INFO 2308 --- [book-management-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T22:10:10.087+05:30  INFO 2308 --- [book-management-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-25T22:10:13.171+05:30  WARN 2308 --- [book-management-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T22:10:15.778+05:30  INFO 2308 --- [book-management-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a18e18d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b628249, org.springframework.security.web.context.SecurityContextHolderFilter@205efdfc, org.springframework.security.web.header.HeaderWriterFilter@6b334a1, org.springframework.web.filter.CorsFilter@727eae52, org.springframework.security.web.authentication.logout.LogoutFilter@1d5e0621, com.booksystem.security.AuthTokenFilter@411ae0d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35be9318, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ad39f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@237bdd46, org.springframework.security.web.session.SessionManagementFilter@2ca9e25a, org.springframework.security.web.access.ExceptionTranslationFilter@1964a3f, org.springframework.security.web.access.intercept.AuthorizationFilter@3c62bae5]
+2026-02-25T22:10:17.000+05:30  INFO 2308 --- [book-management-system] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-25T22:10:17.073+05:30  INFO 2308 --- [book-management-system] [           main] c.booksystem.BookManagementApplication   : Started BookManagementApplication in 20.526 seconds (process running for 21.489)
+2026-02-25T22:10:25.430+05:30  INFO 2308 --- [book-management-system] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-25T22:10:25.431+05:30  INFO 2308 --- [book-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-25T22:10:25.439+05:30  INFO 2308 --- [book-management-system] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-02-25T22:10:25.756+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/books?query=&page=0&size=8
+2026-02-25T22:10:26.145+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:10:28.390+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.391+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.412+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:10:28.412+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:10:28.517+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error?size=100
+2026-02-25T22:10:28.535+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.535+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /error?query=&page=0&size=8
+2026-02-25T22:10:28.608+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:10:28.608+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.625+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:10:28.631+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:10:28.794+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.795+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:10:28.800+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error?size=100
+2026-02-25T22:10:28.800+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:10:28.800+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:11:05.508+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/register
+2026-02-25T22:11:05.514+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:11:05.514+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/register
+Hibernate: select u1_0.id from users u1_0 where u1_0.username=? fetch first ? rows only
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into users (email,password,role,username) values (?,?,?,?)
+2026-02-25T22:11:22.434+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-02-25T22:11:22.530+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:11:22.541+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:24.152+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-02-25T22:11:24.289+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:24.307+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/books?size=100
+Hibernate: select b1_0.id,b1_0.author,b1_0.category,b1_0.count,b1_0.created_at,b1_0.description,b1_0.isbn,b1_0.published_year,b1_0.title from books b1_0 order by b1_0.id desc offset ? rows fetch first ? rows only
+2026-02-25T22:11:24.617+05:30 DEBUG 2308 --- [book-management-system] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:24.655+05:30 DEBUG 2308 --- [book-management-system] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/books?size=100
+Hibernate: select b1_0.id,b1_0.author,b1_0.category,b1_0.count,b1_0.created_at,b1_0.description,b1_0.isbn,b1_0.published_year,b1_0.title from books b1_0 order by b1_0.id desc offset ? rows fetch first ? rows only
+2026-02-25T22:11:46.989+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/books?query=&page=0&size=8
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:47.025+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/books?query=&page=0&size=8
+Hibernate: select b1_0.id,b1_0.author,b1_0.category,b1_0.count,b1_0.created_at,b1_0.description,b1_0.isbn,b1_0.published_year,b1_0.title from books b1_0 order by b1_0.id desc offset ? rows fetch first ? rows only
+2026-02-25T22:11:50.932+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:50.952+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/books?size=100
+Hibernate: select b1_0.id,b1_0.author,b1_0.category,b1_0.count,b1_0.created_at,b1_0.description,b1_0.isbn,b1_0.published_year,b1_0.title from books b1_0 order by b1_0.id desc offset ? rows fetch first ? rows only
+2026-02-25T22:11:51.002+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/books?size=100
+Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.role,u1_0.username from users u1_0 where u1_0.username=?
+2026-02-25T22:11:51.033+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/books?size=100
+Hibernate: select b1_0.id,b1_0.author,b1_0.category,b1_0.count,b1_0.created_at,b1_0.description,b1_0.isbn,b1_0.published_year,b1_0.title from books b1_0 order by b1_0.id desc offset ? rows fetch first ? rows only
+2026-02-25T22:26:45.059+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/books
+2026-02-25T22:26:45.071+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:26:45.076+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2026-02-25T22:26:45.084+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2026-02-25T22:26:45.084+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-25T22:26:45.084+05:30 DEBUG 2308 --- [book-management-system] [nio-8080-exec-3] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17:08 min
+[INFO] Finished at: 2026-02-25T22:26:58+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.2:run (default-cli) on project book-management-system: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

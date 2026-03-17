@@ -1,0 +1,11 @@
+2026-02-25T22:18:51.696+05:30  INFO 24208 --- [book-management-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e0fd2dc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3110bb19, org.springframework.security.web.context.SecurityContextHolderFilter@530e500c, org.springframework.security.web.header.HeaderWriterFilter@4306709f, org.springframework.web.filter.CorsFilter@1be6c991, org.springframework.security.web.authentication.logout.LogoutFilter@4b6abf4e, com.booksystem.security.AuthTokenFilter@59d29065, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1925b113, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@eaa901a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18482805, org.springframework.security.web.session.SessionManagementFilter@40d1e561, org.springframework.security.web.access.ExceptionTranslationFilter@32b5b8f8, org.springframework.security.web.access.intercept.AuthorizationFilter@4f1cb802]
+2026-02-25T22:18:52.271+05:30  WARN 24208 --- [book-management-system] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-25T22:18:52.459+05:30 ERROR 24208 --- [book-management-system] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.2:run (default-cli) on project book-management-system: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
